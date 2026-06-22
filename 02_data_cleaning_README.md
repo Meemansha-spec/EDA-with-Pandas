@@ -58,9 +58,6 @@ telecom_customer_churn_cleaned.csv
 - Python
 - Pandas
 - NumPy
-- Regex
-- Pathlib
-- Jupyter Notebook
 
 ---
 
@@ -84,8 +81,6 @@ Libraries used:
 
 - `pandas` for data manipulation
 - `numpy` for numerical operations
-- `re` for column name standardization
-- `pathlib` for file path handling
 
 ---
 
@@ -225,7 +220,7 @@ The following cleaning is applied:
 
 A customer without phone service cannot have multiple lines or long-distance phone charges.
 
-For customers with phone service but missing long-distance charges, the median charge of phone-service users is used as a safe fallback.
+For customers with phone service but missing long-distance charges, the median charge of phone-service users can be used as a safe fallback.
 
 ---
 
@@ -267,7 +262,7 @@ avg_monthly_gb_download
 
 A customer without internet service cannot have internet type, online security, streaming service, online backup, or data usage.
 
-For customers with internet service but missing internet-related values, categorical columns are marked as `Unknown`, and missing GB download values are filled using the median of internet-service users.
+For customers with internet service but missing internet-related values, categorical columns can be marked as `Unknown`, and missing GB download values can be filled using the median of internet-service users.
 
 ---
 
@@ -283,7 +278,7 @@ Not Churned
 
 A customer who stayed or recently joined the company should not have a churn reason.
 
-For churned customers with missing churn category or reason, the values are filled with:
+For churned customers with missing churn category or reason, the values can be filled with:
 
 ```text
 Unknown Churn Category
