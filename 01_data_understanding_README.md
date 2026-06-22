@@ -54,7 +54,7 @@ The dataset contains customer-level information for a telecom company. Each row 
 ## Notebook File
 
 ```text
-01_data_understanding.ipynb
+Churn_data_Understanding.ipynb
 ```
 
 This notebook focuses only on understanding the raw dataset. No permanent cleaning, transformation, or feature engineering is performed in this phase.
